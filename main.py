@@ -2,8 +2,8 @@ from mcp.server.fastmcp import FastMCP
 import logging
 
 from util import get_previous_trading_date
-from open_interest import (
-    calculate_max_pain,
+from openinterest import calculate_max_pain
+from helpers import (
     fetch_open_interest,
     calculate_sum_option_interest,
 )
