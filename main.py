@@ -43,7 +43,7 @@ def calculate_option_put_call_sum(symbol: str) -> float:
         calculate_sum_option_interest(open_interest_data)
     )
     put_call_ratio = put_open_interest / call_open_interest
-    if put_call_ratio > 1:
+    if put_call_ratio < 1:
         option_sentiment = "bullish"
     else:
         option_sentiment = "bearish"
